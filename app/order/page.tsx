@@ -23,7 +23,7 @@ const SIZES = ['XS', 'S', 'M', 'L', 'XL', 'XXL', '3XL', '4XL', '5XL']
 
 const schema = z.object({
   product_type: z.string().min(1, 'Please select a product'),
-  quantity: z.preprocess((v) => parseInt(String(v), 10), z.number().int().min(1, 'Minimum 1').max(500)),
+  quantity: z.string(),
   size: z.string().optional(),
   notes: z.string().optional(),
   contact_name: z.string().min(2, 'Name is required'),
@@ -45,7 +45,7 @@ export default function OrderPage() {
     formState: { errors },
   } = useForm<FormValues>({
     resolver: zodResolver(schema),
-    defaultValues: { quantity: 1 },
+    defaultValues: { quantity: '1' },
   })
 
   const productType = watch('product_type')
@@ -77,7 +77,7 @@ export default function OrderPage() {
 
       const { error } = await supabase.from('orders').insert({
         product_type: values.product_type,
-        quantity: values.quantity,
+        quantity: parseInt(values.quantity, 10) || 1,
         size: needsSize ? values.size || null : null,
         design_file_url,
         notes: values.notes || null,
@@ -122,7 +122,8 @@ export default function OrderPage() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-[#1877f2] rounded-lg hover:bg-[#166fe5] transition-colors"
             >
-              <Facebook size={16} /> Message on Facebook
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              Message on Facebook
             </a>
             <Link
               href="/"
