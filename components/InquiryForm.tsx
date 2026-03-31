@@ -53,7 +53,7 @@ export default function InquiryForm() {
           </div>
           <div className="space-y-1.5">
             <Label>Order Type</Label>
-            <Select onValueChange={v => setValue('orderType', v)}>
+            <Select onValueChange={(v: string | null) => setValue('orderType', v ?? '')}>
               <SelectTrigger><SelectValue placeholder="Select a product" /></SelectTrigger>
               <SelectContent>
                 {['T-Shirt','Mug','Net Cap','Mousepad','Plate','Jigsaw Puzzle','Metal Sheet','Other'].map(o => (

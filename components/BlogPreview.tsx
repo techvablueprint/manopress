@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { blogPosts } from '@/data/blogPosts'
-import { Button } from '@/components/ui/button'
 
 export default function BlogPreview() {
   return (
@@ -12,7 +11,7 @@ export default function BlogPreview() {
             <p className="text-xs font-mono uppercase tracking-widest text-primary mb-2">// From Our Blog</p>
             <h2 className="text-4xl font-bold" style={{ fontFamily: "'Playfair Display', serif" }}>Tips & Guides</h2>
           </div>
-          <Button variant="outline" asChild><Link href="/blog">All Articles →</Link></Button>
+          <Link href="/blog" className="inline-flex items-center px-4 py-2 text-sm font-semibold border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">All Articles →</Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {blogPosts.slice(0,3).map(post => (
