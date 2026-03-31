@@ -1,5 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
-import { ShoppingBag, Clock, CheckCircle, Package } from 'lucide-react'
+import { ShoppingBag, Clock, CheckCircle, Package, Users } from 'lucide-react'
+import Link from 'next/link'
 
 export const dynamic = 'force-dynamic'
 
@@ -40,7 +41,7 @@ export default async function AdminDashboard() {
       </div>
 
       {/* Stats */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 mb-8">
+      <div className="grid grid-cols-2 lg:grid-cols-5 gap-5 mb-8">
         {stats.map(({ label, value, icon: Icon, color }) => (
           <div key={label} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
             <div className={`inline-flex items-center justify-center w-10 h-10 rounded-xl ${color} text-white mb-3`}>
@@ -50,6 +51,13 @@ export default async function AdminDashboard() {
             <div className="text-sm text-gray-500">{label}</div>
           </div>
         ))}
+        <a href="https://analytics.google.com/analytics/web/#/p523522243/reports/intelligenthome" target="_blank" rel="noopener noreferrer" className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 hover:border-[#1e3a8a] transition-colors">
+          <div className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-orange-500 text-white mb-3">
+            <Users size={20} />
+          </div>
+          <div className="text-2xl font-bold text-gray-900">View</div>
+          <div className="text-sm text-gray-500">Site Visitors →</div>
+        </a>
       </div>
 
       {/* Recent orders */}
