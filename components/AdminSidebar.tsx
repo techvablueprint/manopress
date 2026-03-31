@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname, useRouter } from 'next/navigation'
-import { LayoutDashboard, ShoppingBag, Package, LogOut } from 'lucide-react'
+import { LayoutDashboard, ShoppingBag, Package, LogOut, BarChart2 } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
 import { toast } from 'sonner'
 
@@ -58,6 +58,15 @@ export default function AdminSidebar() {
             </Link>
           )
         })}
+        <a
+          href="https://analytics.google.com/analytics/web/#/p523522243/reports/intelligenthome"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-blue-200 hover:bg-white/10 hover:text-white transition-colors"
+        >
+          <BarChart2 size={18} />
+          Site Visitors
+        </a>
       </nav>
 
       {/* Logout */}
