@@ -23,7 +23,7 @@ const SIZES = ['XS', 'S', 'M', 'L', 'XL', 'XXL', '3XL', '4XL', '5XL']
 
 const schema = z.object({
   product_type: z.string().min(1, 'Please select a product'),
-  quantity: z.coerce.number().int().min(1, 'Minimum 1').max(500),
+  quantity: z.preprocess((v) => parseInt(String(v), 10), z.number().int().min(1, 'Minimum 1').max(500)),
   size: z.string().optional(),
   notes: z.string().optional(),
   contact_name: z.string().min(2, 'Name is required'),
