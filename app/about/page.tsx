@@ -26,7 +26,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="bg-[#1e3a8a] py-20 px-4">
         <div className="max-w-3xl mx-auto text-center text-white">
-          <p className="text-sm font-semibold uppercase tracking-widest text-blue-200 mb-3">About ManoPress</p>
+          <p className="text-sm font-semibold uppercase tracking-widest text-blue-200 mb-3">About Mano-Press</p>
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">Printing Dreams,<br />One Piece at a Time</h1>
           <p className="text-lg text-blue-100 leading-relaxed">
             We&apos;re a small sublimation printing business based in Santa Rosa, Laguna — passionate about
@@ -43,7 +43,7 @@ export default function AboutPage() {
               <p className="text-sm font-semibold uppercase tracking-widest text-[#1e3a8a] mb-3">Our Story</p>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Born from a Passion for Custom Prints</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                ManoPress started as a personal project — a love for creating custom, meaningful items for friends
+                Mano-Press started as a personal project — a love for creating custom, meaningful items for friends
                 and family. Over time, word spread, and what began as a hobby turned into a full-fledged
                 sublimation printing business.
               </p>
@@ -61,7 +61,7 @@ export default function AboutPage() {
             <div className="relative h-80 lg:h-auto rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/tshirt-design-1.jpg"
-                alt="ManoPress printing"
+                alt="Mano-Press printing"
                 fill
                 className="object-cover"
               />

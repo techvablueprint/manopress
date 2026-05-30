@@ -37,7 +37,7 @@ export default function AdminLoginPage() {
         <div className="text-center mb-8">
           <Image
             src="/assets/manopress-logo-new.png"
-            alt="ManoPress"
+            alt="Mano-Press"
             width={160}
             height={48}
             className="h-12 w-auto mx-auto brightness-0 invert"
@@ -60,7 +60,7 @@ export default function AdminLoginPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                placeholder="admin@manopress.uk"
+                placeholder="admin@mano-press.com"
                 className="w-full px-3 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1e3a8a] focus:border-transparent"
               />
             </div>
@@ -97,7 +97,7 @@ export default function AdminLoginPage() {
         </div>
 
         <p className="text-center text-xs text-blue-300 mt-6">
-          ManoPress Admin &mdash; Authorized Access Only
+          Mano-Press Admin &mdash; Authorized Access Only
         </p>
       </div>
     </div>

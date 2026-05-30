@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="relative w-full overflow-hidden bg-blue-50">
       <Image
         src="/assets/hero-cover-v4.png"
-        alt="ManoPress Custom Sublimation Printing"
+        alt="Mano-Press Custom Sublimation Printing"
         width={1920} height={900}
         className="w-full max-h-[88vh] object-cover"
         priority

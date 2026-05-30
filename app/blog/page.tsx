@@ -48,7 +48,7 @@ export default function BlogPage() {
     <>
       <section className="bg-[#1e3a8a] py-20 px-4">
         <div className="max-w-2xl mx-auto text-center text-white">
-          <p className="text-sm font-semibold uppercase tracking-widest text-blue-200 mb-3">ManoPress Blog</p>
+          <p className="text-sm font-semibold uppercase tracking-widest text-blue-200 mb-3">Mano-Press Blog</p>
           <h1 className="text-4xl sm:text-5xl font-bold">Tips, Guides & Inspiration</h1>
         </div>
       </section>

@@ -31,7 +31,7 @@ export default function AdminSidebar() {
       <div className="px-5 py-5 border-b border-white/10">
         <Image
           src="/assets/manopress-logo-new.png"
-          alt="ManoPress"
+          alt="Mano-Press"
           width={120}
           height={36}
           className="h-9 w-auto brightness-0 invert"
