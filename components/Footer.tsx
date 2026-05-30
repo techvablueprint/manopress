@@ -6,8 +6,8 @@ export default function Footer() {
     <footer className="bg-[#0f1f40] text-white/65 pt-14 pb-8 px-6 md:px-16">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 pb-10 border-b border-white/10 mb-8">
         <div>
-          <span className="font-bold text-xl text-white block mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>
-            mano<span className="text-blue-400">-press</span>
+          <span className="font-bold text-xl text-blue-400 block mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>
+            mano-press
           </span>
           <p className="text-sm leading-relaxed mb-4">Custom sublimation printing in Santa Rosa, Laguna. Vibrant colors, lasting quality.</p>
           <a href="https://www.facebook.com/profile.php?id=61587380491479" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-400 text-sm hover:text-blue-300">
