@@ -41,7 +41,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="max-w-6xl mx-auto flex justify-between text-xs opacity-40 flex-wrap gap-2">
-        <span>© {new Date().getFullYear()} Mano-Press. All rights reserved.</span>
+        <span>© {new Date().getFullYear()} mano-press. All rights reserved.</span>
         <span>Santa Rosa, Laguna, Philippines</span>
       </div>
     </footer>

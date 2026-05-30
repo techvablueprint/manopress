@@ -17,9 +17,9 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-border h-16 flex items-center px-6 md:px-12 justify-between shadow-sm">
       <Link href="/" className="flex items-center gap-2.5">
-        <Image src="/assets/manopress-logo-new.png" alt="Mano-Press" width={40} height={40} className="h-10 w-10 object-contain rounded-full" />
+        <Image src="/assets/manopress-logo-new.png" alt="mano-press" width={40} height={40} className="h-10 w-10 object-contain rounded-full" />
         <span className="font-bold text-xl tracking-wide text-[#1e3a8a]" style={{ fontFamily: "'Playfair Display', serif" }}>
-          MANO-PRESS
+          mano-press
         </span>
       </Link>
 

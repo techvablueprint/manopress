@@ -22,7 +22,7 @@ export const blogPosts: BlogPost[] = [
       'The sublimation process starts with printing your design onto a special transfer paper using sublimation ink. The paper is then placed face-down onto the substrate and pressed under high heat and pressure. Within seconds, the ink converts to gas and permanently bonds with the fibres.',
       'One of the biggest advantages of sublimation printing over other methods is photo-quality output. You can print full-colour, photographic-quality images, gradients, and complex designs with absolutely no colour limits. Screen printing, by contrast, requires separate setups for each colour, making complex designs expensive.',
       'Sublimation also offers edge-to-edge printing. You can cover the entire surface of a product — something that is difficult or expensive with embroidery or vinyl printing. This makes sublimation ideal for all-over print t-shirts, full-wrap mugs, and panoramic photo products.',
-      'At Mano-Press, we use professional-grade sublimation equipment to ensure every print is sharp, colourfast, and consistent. Whether you\'re ordering one item or a hundred, the quality remains the same. Our heat presses are calibrated regularly to maintain precise temperature and pressure for consistent results across all product types.',
+      'At mano-press, we use professional-grade sublimation equipment to ensure every print is sharp, colourfast, and consistent. Whether you\'re ordering one item or a hundred, the quality remains the same. Our heat presses are calibrated regularly to maintain precise temperature and pressure for consistent results across all product types.',
     ],
   },
   {
@@ -44,7 +44,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'sublimation-product-guide',
-    title: 'Mano-Press Product Guide: Which Item Is Right for You?',
+    title: 'mano-press Product Guide: Which Item Is Right for You?',
     excerpt: 'From t-shirts to metal sheets, we print on 7 different product types. This guide helps you choose the right one for your needs.',
     date: 'Mar 24, 2025',
     readTime: '6 min read',
@@ -67,7 +67,7 @@ export const blogPosts: BlogPost[] = [
     date: 'Apr 1, 2025',
     readTime: '3 min read',
     content: [
-      'Mano-Press accepts orders of any size — from a single personalised mug to hundreds of t-shirts for a corporate event. There\'s no minimum order quantity, and we offer discounts for larger volumes.',
+      'mano-press accepts orders of any size — from a single personalised mug to hundreds of t-shirts for a corporate event. There\'s no minimum order quantity, and we offer discounts for larger volumes.',
       'Bulk pricing: Orders of 10+ items receive a 10% discount. Orders of 50+ items receive a 15% discount. For orders of 100 or more, contact us directly for a custom quote. These discounts apply per product type — a mixed order of 10 mugs and 10 t-shirts qualifies for the discount on each category.',
       'Turnaround time: Standard production is 2–3 business days per item type. For bulk orders (20+), add 1–2 business days. Rush orders may be available — inquire via our Facebook page. We always confirm turnaround time before accepting a bulk order so there are no surprises.',
       'For team orders with multiple names, numbers, or designs, each variation counts as a separate design job. Please submit all variations together in a single order with clear notes. The more organised your submission, the faster we can produce your order.',
@@ -107,7 +107,7 @@ export const blogPosts: BlogPost[] = [
       'Feel and texture: Screen printing leaves a slightly raised, tactile layer on the fabric surface. High-quality sublimation prints have no texture — the ink is part of the fabric itself. For wearable items, sublimation typically feels more comfortable as there is no print layer to trap heat or cause irritation.',
       'Durability: Both methods are durable, but in different ways. Screen printing can crack or peel over time, especially with repeated washing. Sublimation prints are essentially permanent — the ink cannot be removed without damaging the fabric itself.',
       'Minimum quantities: Screen printing typically requires minimum orders of 20–50 pieces per design to be cost-effective due to screen setup costs. Sublimation has no minimum — one item costs the same per-unit as one hundred.',
-      'Our verdict: For full-colour designs, photo-quality prints, small quantities, or polyester products, sublimation is the better choice. For simple logos on cotton garments in large quantities, screen printing may be more cost-effective. At Mano-Press, we specialise in sublimation and can advise you on whether it\'s the right fit for your project.',
+      'Our verdict: For full-colour designs, photo-quality prints, small quantities, or polyester products, sublimation is the better choice. For simple logos on cotton garments in large quantities, screen printing may be more cost-effective. At mano-press, we specialise in sublimation and can advise you on whether it\'s the right fit for your project.',
     ],
   },
   {
@@ -125,7 +125,7 @@ export const blogPosts: BlogPost[] = [
       'Jigsaw Puzzles: A custom puzzle is a unique, memorable giveaway that stands out from the usual branded merchandise. Use a team photo, company logo, or creative graphic. Puzzles encourage engagement and are often displayed after completion. They work especially well for family-friendly events.',
       'Metal Sheet Prints: For premium clients or executive gifts, metal sheet prints offer a sophisticated, high-end look. A company photo, award certificate, or art print on aluminium is a striking desk or wall piece. The metallic sheen adds a premium quality that other print methods cannot replicate.',
       'Net Caps: Branded caps are practical, stylish, and suitable for all ages. They\'re particularly popular for outdoor events, sports days, and team outings. A well-designed cap will be worn regularly, giving your brand continuous visibility wherever your recipients go.',
-      'When planning corporate giveaways, consider your audience, the occasion, and your budget. At Mano-Press, we offer bulk discounts on orders of 10 or more items and can help you choose the right product for your specific event. Contact us through our order form or Facebook page to discuss your requirements.',
+      'When planning corporate giveaways, consider your audience, the occasion, and your budget. At mano-press, we offer bulk discounts on orders of 10 or more items and can help you choose the right product for your specific event. Contact us through our order form or Facebook page to discuss your requirements.',
     ],
   },
   {
@@ -143,7 +143,7 @@ export const blogPosts: BlogPost[] = [
       'Corporate events and team building: Matching team shirts create unity and professionalism. Branded giveaways like mugs or mousepads serve as practical reminders of the event. For leadership or recognition events, premium metal print certificates or plaques make lasting awards.',
       'Design tips for events: Include the event name, date, and location in your design. For group events, consider a design that works as a complete set — each person\'s item slightly different but part of a cohesive collection. Keep designs simple and legible — they need to read well at small sizes.',
       'Choosing the right products: Think about what your guests will actually use and keep. Mugs and mousepads have high utility. T-shirts are popular but size selection can be challenging. Photo plates and puzzles are more display-focused. Metal prints are premium keepsakes for special occasions.',
-      'At Mano-Press, we\'ve handled printing for weddings, school events, corporate functions, and community celebrations. Our team is happy to advise on product selection, quantities, and design preparation. Use our order form to get started, or message us on Facebook for a personalised consultation.',
+      'At mano-press, we\'ve handled printing for weddings, school events, corporate functions, and community celebrations. Our team is happy to advise on product selection, quantities, and design preparation. Use our order form to get started, or message us on Facebook for a personalised consultation.',
     ],
   },
   {
@@ -178,7 +178,7 @@ export const blogPosts: BlogPost[] = [
       'Gifts for children: Bright, colourful t-shirts with cartoon characters, personalised mousepads for school, or a custom jigsaw puzzle with the child\'s favourite photo — children respond very positively to seeing their name or face printed on products. These make perfect birthday and Christmas gifts.',
       'Gifts for colleagues and professionals: Branded or personalised mousepads and mugs are appropriate for professional gifting. They\'re useful, non-intrusive, and suitable for any workplace. A metal print of a team photo or significant company milestone makes a meaningful gift for a departing colleague.',
       'Ordering a gift: Place your order at least one week before you need it. Upload your photo or design through our order form, include any special instructions in the notes field, and we\'ll get back to you to confirm details. We can also advise on design adjustments to ensure the best possible result.',
-      'At Mano-Press, we take extra care with gift orders. If you\'d like us to double-check anything before printing — such as cropping, colour, or text placement — just ask. We want your gift to arrive exactly as you imagined.',
+      'At mano-press, we take extra care with gift orders. If you\'d like us to double-check anything before printing — such as cropping, colour, or text placement — just ask. We want your gift to arrive exactly as you imagined.',
     ],
   },
   {
@@ -195,7 +195,7 @@ export const blogPosts: BlogPost[] = [
       'Faster turnaround: Local printers typically offer 2–3 day turnaround for standard orders. Online services often take 7–14 days including shipping. For events and time-sensitive orders, local printing is the only practical choice.',
       'Supporting the local economy: Choosing a local business keeps money within your community. You\'re supporting a local team, their families, and the broader local economy. At a time when small businesses face significant challenges from large online competitors, your support makes a real difference.',
       'Environmental impact: Local printing reduces shipping distances, which means lower carbon emissions. When you order from an overseas online service, your products may travel thousands of miles. Local printing is the more sustainable option.',
-      'At Mano-Press, we combine the convenience of online ordering with the quality assurance and personal service of a local shop. You can place your order through our website at any time, and we\'ll be in touch to confirm details before production begins. We believe you shouldn\'t have to choose between convenience and quality.',
+      'At mano-press, we combine the convenience of online ordering with the quality assurance and personal service of a local shop. You can place your order through our website at any time, and we\'ll be in touch to confirm details before production begins. We believe you shouldn\'t have to choose between convenience and quality.',
     ],
   },
   {
@@ -230,8 +230,8 @@ export const blogPosts: BlogPost[] = [
       'Event-based marketing: Participating in local markets, trade fairs, or community events? Branded t-shirts, caps, and printed banners make your stall stand out and create a professional impression. Giving away small branded items like keyrings or stickers encourages people to remember your business.',
       'Client appreciation gifts: A personalised mug or printed item sent to a loyal client says thank you in a way that an email never can. It\'s a tangible expression of appreciation that sits on their desk and reinforces the relationship every day.',
       'Social media content: Custom printed products make excellent content for your social media channels. Unboxing your order, wearing your branded t-shirt, or photographing your branded products creates authentic, relatable content that customers respond to positively.',
-      'Budget planning: You don\'t need to order everything at once. Start with one or two product types, see how customers respond, and expand from there. At Mano-Press, there\'s no minimum order — you can order 5 mugs for a small trial without committing to a large stock.',
-      'At Mano-Press, we work with businesses of all sizes — from solo traders to established companies. We can advise on the most cost-effective products for your marketing goals and help you get the most from your printing budget.',
+      'Budget planning: You don\'t need to order everything at once. Start with one or two product types, see how customers respond, and expand from there. At mano-press, there\'s no minimum order — you can order 5 mugs for a small trial without committing to a large stock.',
+      'At mano-press, we work with businesses of all sizes — from solo traders to established companies. We can advise on the most cost-effective products for your marketing goals and help you get the most from your printing budget.',
     ],
   },
   {

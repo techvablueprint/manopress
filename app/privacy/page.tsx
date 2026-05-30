@@ -5,7 +5,7 @@ export default function PrivacyPage() {
         <h1 className="text-3xl font-bold text-gray-900 mb-2">Privacy Policy</h1>
         <p className="text-sm text-gray-400 mb-8">Last updated: March 30, 2026</p>
         <div className="prose prose-gray max-w-none text-gray-600 leading-relaxed space-y-6">
-          <p>Mano-Press (&ldquo;we&rdquo;, &ldquo;our&rdquo;, &ldquo;us&rdquo;) respects your privacy. This policy explains what information we collect and how we use it.</p>
+          <p>mano-press (&ldquo;we&rdquo;, &ldquo;our&rdquo;, &ldquo;us&rdquo;) respects your privacy. This policy explains what information we collect and how we use it.</p>
           <h2 className="text-xl font-bold text-gray-900">Information We Collect</h2>
           <p>When you place an order, we collect your name, phone number, delivery address, and any design files you upload. We do not require account registration.</p>
           <h2 className="text-xl font-bold text-gray-900">How We Use Your Information</h2>
