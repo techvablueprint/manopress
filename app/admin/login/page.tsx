@@ -37,7 +37,7 @@ export default function AdminLoginPage() {
         <div className="text-center mb-8">
           <Image
             src="/assets/manopress-logo-new.png"
-            alt="Mano-Press"
+            alt="mano-press"
             width={160}
             height={48}
             className="h-12 w-auto mx-auto brightness-0 invert"
@@ -97,7 +97,7 @@ export default function AdminLoginPage() {
         </div>
 
         <p className="text-center text-xs text-blue-300 mt-6">
-          Mano-Press Admin &mdash; Authorized Access Only
+          mano-press Admin &mdash; Authorized Access Only
         </p>
       </div>
     </div>

@@ -109,7 +109,7 @@ export default function HomePage() {
       <section className="relative h-[90vh] min-h-[560px] flex items-center justify-center overflow-hidden">
         <Image
           src="/assets/hero-cover-v4.png"
-          alt="Mano-Press Hero"
+          alt="mano-press Hero"
           fill
           className="object-cover object-center"
           priority
@@ -147,7 +147,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-sm font-semibold uppercase tracking-widest text-[#1e3a8a] mb-3">
-              Welcome to Mano-Press
+              Welcome to mano-press
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
               Bringing Your Ideas to Life

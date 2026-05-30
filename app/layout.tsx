@@ -6,8 +6,8 @@ import Footer from '@/components/Footer'
 import { Toaster } from '@/components/ui/sonner'
 
 export const metadata: Metadata = {
-  title: 'Mano-Press — Custom Sublimation Printing in Santa Rosa, Laguna',
-  description: 'Mano-Press offers professional sublimation printing on t-shirts, mugs, caps, mousepads, plates, puzzles, and metal sheets in Santa Rosa, Laguna, Philippines.',
+  title: 'mano-press — Custom Sublimation Printing in Santa Rosa, Laguna',
+  description: 'mano-press offers professional sublimation printing on t-shirts, mugs, caps, mousepads, plates, puzzles, and metal sheets in Santa Rosa, Laguna, Philippines.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
