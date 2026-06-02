@@ -108,7 +108,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative h-[90vh] min-h-[560px] flex items-center justify-center overflow-hidden">
         <Image
-          src="/assets/hero-cover-v4.png"
+          src="/assets/hero-cover-v5.png"
           alt="mano-press Hero"
           fill
           className="object-cover object-center"
