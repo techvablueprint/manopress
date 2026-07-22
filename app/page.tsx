@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, Star, Package, Clock, CheckCircle } from 'lucide-react'
+import heroAsset from '@/public/assets/hero-cover-v6.png.asset.json'
 
 const products = [
   {
