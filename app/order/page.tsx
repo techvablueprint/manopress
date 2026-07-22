@@ -38,14 +38,12 @@ export default function OrderPage() {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm<FormValues>({
     resolver: zodResolver(schema),
     defaultValues: { quantity: '1' },
   })
 
-  const productType = watch('product_type')
   const needsSize = true
 
   const onSubmit = async (values: FormValues) => {
