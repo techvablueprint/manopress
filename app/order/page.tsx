@@ -46,7 +46,7 @@ export default function OrderPage() {
   })
 
   const productType = watch('product_type')
-  const needsSize = productType === 'T-Shirt' || productType === 'Net Cap'
+  const needsSize = true
 
   const onSubmit = async (values: FormValues) => {
     setLoading(true)
