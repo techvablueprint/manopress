@@ -5,8 +5,8 @@ export default function Hero() {
   return (
     <section className="relative w-full overflow-hidden bg-blue-50">
       <Image
-        src="/assets/hero-cover-v5.png"
-        alt="mano-press Custom Sublimation Printing"
+        src="/assets/hero-cover-v6.png"
+        alt="mano-press custom sublimation printing banner"
         width={1920} height={900}
         className="w-full max-h-[88vh] object-cover"
         priority

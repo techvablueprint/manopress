@@ -1,28 +1,52 @@
-import { createClient } from '@/lib/supabase/server'
+'use client'
+
+import { useEffect, useState } from 'react'
+import { createClient } from '@/lib/supabase/client'
 import { ShoppingBag, Clock, CheckCircle, Package, Users } from 'lucide-react'
 import Link from 'next/link'
 
-export const dynamic = 'force-dynamic'
+type Order = {
+  id: string
+  contact_name: string
+  contact_phone: string
+  product_type: string
+  quantity: number
+  status: string
+  created_at: string
+}
 
-export default async function AdminDashboard() {
-  const supabase = await createClient()
+export default function AdminDashboard() {
+  const [totalOrders, setTotalOrders] = useState(0)
+  const [pendingOrders, setPendingOrders] = useState(0)
+  const [completedOrders, setCompletedOrders] = useState(0)
+  const [recentOrders, setRecentOrders] = useState<Order[]>([])
+  const [loading, setLoading] = useState(true)
 
-  const [
-    { count: totalOrders },
-    { count: pendingOrders },
-    { count: completedOrders },
-    { data: recentOrders },
-  ] = await Promise.all([
-    supabase.from('orders').select('*', { count: 'exact', head: true }),
-    supabase.from('orders').select('*', { count: 'exact', head: true }).eq('status', 'Pending'),
-    supabase.from('orders').select('*', { count: 'exact', head: true }).eq('status', 'Completed'),
-    supabase.from('orders').select('*').order('created_at', { ascending: false }).limit(10),
-  ])
+  useEffect(() => {
+    const fetchDashboard = async () => {
+      const supabase = createClient()
+
+      const [{ count: total }, { count: pending }, { count: completed }, { data: recent }] = await Promise.all([
+        supabase.from('orders').select('*', { count: 'exact', head: true }),
+        supabase.from('orders').select('*', { count: 'exact', head: true }).eq('status', 'Pending'),
+        supabase.from('orders').select('*', { count: 'exact', head: true }).eq('status', 'Completed'),
+        supabase.from('orders').select('*').order('created_at', { ascending: false }).limit(10),
+      ])
+
+      setTotalOrders(total ?? 0)
+      setPendingOrders(pending ?? 0)
+      setCompletedOrders(completed ?? 0)
+      setRecentOrders(recent || [])
+      setLoading(false)
+    }
+
+    fetchDashboard()
+  }, [])
 
   const stats = [
-    { label: 'Total Orders', value: totalOrders ?? 0, icon: ShoppingBag, color: 'bg-blue-500' },
-    { label: 'Pending', value: pendingOrders ?? 0, icon: Clock, color: 'bg-yellow-500' },
-    { label: 'Completed', value: completedOrders ?? 0, icon: CheckCircle, color: 'bg-green-500' },
+    { label: 'Total Orders', value: totalOrders, icon: ShoppingBag, color: 'bg-blue-500' },
+    { label: 'Pending', value: pendingOrders, icon: Clock, color: 'bg-yellow-500' },
+    { label: 'Completed', value: completedOrders, icon: CheckCircle, color: 'bg-green-500' },
     { label: 'Products', value: 7, icon: Package, color: 'bg-purple-500' },
   ]
 
@@ -77,7 +101,13 @@ export default async function AdminDashboard() {
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-50">
-              {recentOrders?.length ? (
+              {loading ? (
+                <tr>
+                  <td colSpan={5} className="px-6 py-12 text-center text-gray-400">
+                    Loading...
+                  </td>
+                </tr>
+              ) : recentOrders.length ? (
                 recentOrders.map((order) => (
                   <tr key={order.id} className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4">
