@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import heroAsset from '@/public/assets/hero-cover-v6.png.asset.json'
 
 export default function Hero() {
   return (
