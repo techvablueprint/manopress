@@ -73,7 +73,7 @@ export default function HomePage() {
             Your Design,<br />Our Craftsmanship
           </h1>
           <p className="text-lg text-blue-100 mb-8 max-w-xl mx-auto">
-            Premium sublimation printing on shirts, mugs, caps, and more. Quality that lasts.
+            Premium sublimation-printed t-shirts. Vibrant colors, soft feel, built to last.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
