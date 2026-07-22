@@ -10,13 +10,10 @@ import { ArrowRight, Upload, CheckCircle } from 'lucide-react'
 import Link from 'next/link'
 
 const PRODUCT_TYPES = [
-  'T-Shirt',
-  'Mug',
-  'Net Cap',
-  'Mousepad',
-  'Plate',
-  'Jigsaw Puzzle',
-  'Metal Sheet',
+  'Classic Tee',
+  'Sports Jersey',
+  'Event Shirt',
+  'Custom Design Tee',
 ]
 
 const SIZES = ['XS', 'S', 'M', 'L', 'XL', 'XXL', '3XL', '4XL', '5XL']
@@ -41,15 +38,13 @@ export default function OrderPage() {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm<FormValues>({
     resolver: zodResolver(schema),
     defaultValues: { quantity: '1' },
   })
 
-  const productType = watch('product_type')
-  const needsSize = productType === 'T-Shirt' || productType === 'Net Cap'
+  const needsSize = true
 
   const onSubmit = async (values: FormValues) => {
     setLoading(true)
