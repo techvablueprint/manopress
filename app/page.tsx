@@ -4,74 +4,24 @@ import { ArrowRight, Star, Package, Clock, CheckCircle } from 'lucide-react'
 
 const products = [
   {
-    name: 'T-Shirts',
+    name: 'Classic Tee',
     desc: 'Full-color sublimation on premium polyester tees. Vibrant, wash-resistant prints.',
-    images: [
-      '/assets/tshirt-design-1.jpg',
-      '/assets/tshirt-design-2.jpg',
-      '/assets/tshirt-design-3.jpg',
-      '/assets/tshirt-design-4.jpg',
-    ],
+    images: ['/assets/tshirt-design-1.jpg'],
   },
   {
-    name: 'Mugs',
-    desc: 'Wrap-around sublimation on ceramic mugs. Perfect for gifts and promotions.',
-    images: [
-      '/assets/mousepad-design-1.jpg',
-      '/assets/mousepad-design-2.jpg',
-      '/assets/mousepad-design-3.jpg',
-      '/assets/mousepad-design-4.jpg',
-    ],
+    name: 'Sports Jersey',
+    desc: 'Custom team jerseys with edge-to-edge prints that won\u2019t crack or peel.',
+    images: ['/assets/tshirt-design-2.jpg'],
   },
   {
-    name: 'Net Caps',
-    desc: 'Custom prints on structured mesh caps. Ideal for teams and events.',
-    images: [
-      '/assets/netcap-design-1.jpg',
-      '/assets/netcap-design-2.jpg',
-      '/assets/netcap-design-3.jpg',
-      '/assets/netcap-design-4.jpg',
-    ],
+    name: 'Event Shirt',
+    desc: 'Perfect for reunions, campaigns, and company events. Bulk-friendly pricing.',
+    images: ['/assets/tshirt-design-3.jpg'],
   },
   {
-    name: 'Mousepads',
-    desc: 'High-resolution prints on smooth, non-slip mousepads.',
-    images: [
-      '/assets/mousepad-design-5.jpg',
-      '/assets/mousepad-design-6.jpg',
-      '/assets/mousepad-design-7.jpg',
-      '/assets/mousepad-design-8.jpg',
-    ],
-  },
-  {
-    name: 'Plates',
-    desc: 'Elegant sublimation-printed ceramic plates for keepsakes and awards.',
-    images: [
-      '/assets/plate-design-1.webp',
-      '/assets/plate-design-2.jpg',
-      '/assets/plate-design-3.webp',
-      '/assets/plate-design-4.jpg',
-    ],
-  },
-  {
-    name: 'Jigsaw Puzzles',
-    desc: 'Turn your favorite photo into a fun, high-quality custom puzzle.',
-    images: [
-      '/assets/puzzle-design-1.jpg',
-      '/assets/puzzle-design-2.jpg',
-      '/assets/puzzle-design-3.jpg',
-      '/assets/puzzle-design-4.jpg',
-    ],
-  },
-  {
-    name: 'Metal Sheets',
-    desc: 'Durable aluminum photo panels with vivid, scratch-resistant sublimation.',
-    images: [
-      '/assets/metalsheet-design-1.jpg',
-      '/assets/metalsheet-design-2.jpg',
-      '/assets/metalsheet-design-3.jpg',
-      '/assets/metalsheet-design-4.jpg',
-    ],
+    name: 'Custom Design Tee',
+    desc: 'Bring your own artwork or photo \u2014 we\u2019ll print it in vivid detail.',
+    images: ['/assets/tshirt-design-4.jpg'],
   },
 ]
 
