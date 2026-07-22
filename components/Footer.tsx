@@ -17,8 +17,8 @@ export default function Footer() {
         <div>
           <p className="font-bold text-white text-sm mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>Services</p>
           <ul className="space-y-2 text-sm">
-            {['T-Shirts','Mugs','Net Caps','Mousepads','Plates','Jigsaw Puzzles','Metal Sheets'].map(s => (
-              <li key={s}><Link href="/#products" className="hover:text-white/90 transition-colors">{s}</Link></li>
+            {['Classic Tees','Sports Jerseys','Event Shirts','Custom Design Tees'].map(s => (
+              <li key={s}><Link href="/#services" className="hover:text-white/90 transition-colors">{s}</Link></li>
             ))}
           </ul>
         </div>
