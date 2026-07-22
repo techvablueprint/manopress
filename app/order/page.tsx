@@ -10,13 +10,10 @@ import { ArrowRight, Upload, CheckCircle } from 'lucide-react'
 import Link from 'next/link'
 
 const PRODUCT_TYPES = [
-  'T-Shirt',
-  'Mug',
-  'Net Cap',
-  'Mousepad',
-  'Plate',
-  'Jigsaw Puzzle',
-  'Metal Sheet',
+  'Classic Tee',
+  'Sports Jersey',
+  'Event Shirt',
+  'Custom Design Tee',
 ]
 
 const SIZES = ['XS', 'S', 'M', 'L', 'XL', 'XXL', '3XL', '4XL', '5XL']
