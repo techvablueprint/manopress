@@ -187,14 +187,14 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
             {[
+              '/assets/tshirt-design-1.jpg',
+              '/assets/tshirt-design-2.jpg',
+              '/assets/tshirt-design-3.jpg',
+              '/assets/tshirt-design-4.jpg',
               '/assets/tshirt-design-5.jpg',
               '/assets/tshirt-design-6.jpg',
-              '/assets/netcap-design-5.jpg',
-              '/assets/netcap-design-6.jpg',
-              '/assets/mousepad-design-1.jpg',
-              '/assets/mousepad-design-3.jpg',
-              '/assets/metalsheet-design-5.jpg',
-              '/assets/puzzle-design-5.jpg',
+              '/assets/tshirt-design-7.jpg',
+              '/assets/tshirt-design-8.jpg',
             ].map((src, i) => (
               <div key={i} className="relative aspect-square rounded-xl overflow-hidden group">
                 <Image
