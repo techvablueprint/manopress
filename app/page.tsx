@@ -116,7 +116,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <p className="text-sm font-semibold uppercase tracking-widest text-[#1e3a8a] mb-3">What We Offer</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Our Products</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Our T-Shirts</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {products.map((product) => (
