@@ -58,7 +58,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative h-[90vh] min-h-[560px] flex items-center justify-center overflow-hidden">
         <Image
-          src={heroAsset.url}
+          src="/assets/hero-cover-v6.png"
           alt="mano-press custom sublimation printing banner"
           fill
           className="object-cover object-center"
