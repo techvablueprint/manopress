@@ -14,13 +14,122 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      orders: {
+        Row: {
+          contact_name: string
+          contact_phone: string
+          created_at: string
+          delivery_address: string
+          design_file_url: string | null
+          id: string
+          notes: string | null
+          product_id: string | null
+          product_type: string
+          quantity: number
+          size: string | null
+          status: string
+          total_amount: number | null
+        }
+        Insert: {
+          contact_name: string
+          contact_phone: string
+          created_at?: string
+          delivery_address: string
+          design_file_url?: string | null
+          id?: string
+          notes?: string | null
+          product_id?: string | null
+          product_type: string
+          quantity?: number
+          size?: string | null
+          status?: string
+          total_amount?: number | null
+        }
+        Update: {
+          contact_name?: string
+          contact_phone?: string
+          created_at?: string
+          delivery_address?: string
+          design_file_url?: string | null
+          id?: string
+          notes?: string | null
+          product_id?: string | null
+          product_type?: string
+          quantity?: number
+          size?: string | null
+          status?: string
+          total_amount?: number | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "orders_product_id_fkey"
+            columns: ["product_id"]
+            isOneToOne: false
+            referencedRelation: "products"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      products: {
+        Row: {
+          category: string
+          created_at: string
+          description: string | null
+          id: string
+          image_url: string | null
+          in_stock: boolean
+          name: string
+          price: number
+        }
+        Insert: {
+          category: string
+          created_at?: string
+          description?: string | null
+          id?: string
+          image_url?: string | null
+          in_stock?: boolean
+          name: string
+          price: number
+        }
+        Update: {
+          category?: string
+          created_at?: string
+          description?: string | null
+          id?: string
+          image_url?: string | null
+          in_stock?: boolean
+          name?: string
+          price?: number
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+          is_admin: boolean
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id: string
+          is_admin?: boolean
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+          is_admin?: boolean
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      is_admin: { Args: { _uid: string }; Returns: boolean }
     }
     Enums: {
       [_ in never]: never
