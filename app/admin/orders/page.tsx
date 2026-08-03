@@ -140,14 +140,13 @@ export default function AdminOrdersPage() {
                     <td className="px-6 py-4 text-gray-700">{order.quantity}</td>
                     <td className="px-6 py-4">
                       {order.design_file_url ? (
-                        <a
-                          href={order.design_file_url}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                        <button
+                          type="button"
+                          onClick={() => openDesign(order.design_file_url!)}
                           className="inline-flex items-center gap-1 text-[#1e3a8a] hover:underline text-xs"
                         >
                           View <ExternalLink size={12} />
-                        </a>
+                        </button>
                       ) : (
                         <span className="text-xs text-gray-400">—</span>
                       )}
