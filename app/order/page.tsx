@@ -223,21 +223,22 @@ export default function OrderPage() {
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1.5">
                 Design File
-                <span className="ml-2 text-xs text-gray-400 font-normal">(JPG, PNG, PDF, AI, PSD)</span>
+                <span className="ml-2 text-xs text-gray-400 font-normal">(JPG or PNG only, max 10MB)</span>
               </label>
               <label className="flex flex-col items-center justify-center w-full h-32 border-2 border-dashed border-gray-300 rounded-lg cursor-pointer hover:border-[#1e3a8a] hover:bg-blue-50 transition-colors">
                 <Upload size={24} className="text-gray-400 mb-2" />
                 {file ? (
                   <span className="text-sm text-[#1e3a8a] font-medium">{file.name}</span>
                 ) : (
-                  <span className="text-sm text-gray-500">Click to upload your design</span>
+                  <span className="text-sm text-gray-500">Click to upload your design (JPG / PNG)</span>
                 )}
                 <input
                   type="file"
                   className="hidden"
-                  accept=".jpg,.jpeg,.png,.pdf,.ai,.psd,.svg,.zip"
-                  onChange={(e) => setFile(e.target.files?.[0] || null)}
+                  accept="image/jpeg,image/png,.jpg,.jpeg,.png"
+                  onChange={(e) => handleFileChange(e.target.files?.[0] || null)}
                 />
+              </label>
               </label>
             </div>
 
