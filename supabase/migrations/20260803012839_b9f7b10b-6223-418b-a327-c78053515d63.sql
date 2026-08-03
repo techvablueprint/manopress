@@ -1,0 +1,1 @@
+delete from public.orders where contact_name = 'Playwright Test';
