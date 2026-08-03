@@ -34,6 +34,22 @@ export default function AdminOrdersPage() {
   const [filter, setFilter] = useState('All')
   const [search, setSearch] = useState('')
 
+  const openDesign = async (pathOrUrl: string) => {
+    if (pathOrUrl.startsWith('http')) {
+      window.open(pathOrUrl, '_blank', 'noopener,noreferrer')
+      return
+    }
+    const supabase = createClient()
+    const { data, error } = await supabase.storage
+      .from('designs')
+      .createSignedUrl(pathOrUrl, 60 * 60)
+    if (error || !data) {
+      toast.error('Could not open design file.')
+      return
+    }
+    window.open(data.signedUrl, '_blank', 'noopener,noreferrer')
+  }
+
   const fetchOrders = async () => {
     const supabase = createClient()
     let query = supabase.from('orders').select('*').order('created_at', { ascending: false })
@@ -140,14 +156,13 @@ export default function AdminOrdersPage() {
                     <td className="px-6 py-4 text-gray-700">{order.quantity}</td>
                     <td className="px-6 py-4">
                       {order.design_file_url ? (
-                        <a
-                          href={order.design_file_url}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                        <button
+                          type="button"
+                          onClick={() => openDesign(order.design_file_url!)}
                           className="inline-flex items-center gap-1 text-[#1e3a8a] hover:underline text-xs"
                         >
                           View <ExternalLink size={12} />
-                        </a>
+                        </button>
                       ) : (
                         <span className="text-xs text-gray-400">—</span>
                       )}
