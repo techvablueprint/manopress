@@ -34,6 +34,22 @@ export default function AdminOrdersPage() {
   const [filter, setFilter] = useState('All')
   const [search, setSearch] = useState('')
 
+  const openDesign = async (pathOrUrl: string) => {
+    if (pathOrUrl.startsWith('http')) {
+      window.open(pathOrUrl, '_blank', 'noopener,noreferrer')
+      return
+    }
+    const supabase = createClient()
+    const { data, error } = await supabase.storage
+      .from('designs')
+      .createSignedUrl(pathOrUrl, 60 * 60)
+    if (error || !data) {
+      toast.error('Could not open design file.')
+      return
+    }
+    window.open(data.signedUrl, '_blank', 'noopener,noreferrer')
+  }
+
   const fetchOrders = async () => {
     const supabase = createClient()
     let query = supabase.from('orders').select('*').order('created_at', { ascending: false })
