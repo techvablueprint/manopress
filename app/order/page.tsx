@@ -18,6 +18,9 @@ const PRODUCT_TYPES = [
 
 const SIZES = ['XS', 'S', 'M', 'L', 'XL', 'XXL', '3XL', '4XL', '5XL']
 
+const ACCEPTED_TYPES = ['image/jpeg', 'image/png']
+const MAX_FILE_SIZE = 10 * 1024 * 1024 // 10MB
+
 const schema = z.object({
   product_type: z.string().min(1, 'Please select a product'),
   quantity: z.string(),
@@ -46,6 +49,22 @@ export default function OrderPage() {
 
   const needsSize = true
 
+  const handleFileChange = (selected: File | null) => {
+    if (!selected) {
+      setFile(null)
+      return
+    }
+    if (!ACCEPTED_TYPES.includes(selected.type)) {
+      toast.error('Only JPG and PNG images are allowed.')
+      return
+    }
+    if (selected.size > MAX_FILE_SIZE) {
+      toast.error('Image is too large. Maximum size is 10MB.')
+      return
+    }
+    setFile(selected)
+  }
+
   const onSubmit = async (values: FormValues) => {
     setLoading(true)
     const supabase = createClient()
@@ -54,20 +73,19 @@ export default function OrderPage() {
     try {
       // Upload design file if provided
       if (file) {
-        const ext = file.name.split('.').pop()
+        const ext = file.type === 'image/png' ? 'png' : 'jpg'
         const filename = `${Date.now()}-${Math.random().toString(36).slice(2)}.${ext}`
         const { error: uploadError } = await supabase.storage
           .from('designs')
-          .upload(filename, file, { upsert: false })
+          .upload(filename, file, { upsert: false, contentType: file.type })
 
         if (uploadError) {
-          toast.error('Failed to upload design file. Please try again.')
+          toast.error(`Failed to upload design file: ${uploadError.message}`)
           setLoading(false)
           return
         }
 
-        const { data: urlData } = supabase.storage.from('designs').getPublicUrl(filename)
-        design_file_url = urlData.publicUrl
+        design_file_url = filename
       }
 
       const { error } = await supabase.from('orders').insert({
@@ -82,7 +100,7 @@ export default function OrderPage() {
       })
 
       if (error) {
-        toast.error('Failed to submit order. Please try again.')
+        toast.error(`Failed to submit order: ${error.message}`)
         setLoading(false)
         return
       }
